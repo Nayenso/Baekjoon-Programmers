@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int N = input.nextInt();
+        int M = input.nextInt();
+        int[][] array1 = new int[N][M];
+        int[][] array2 = new int[N][M];
+
+        for (int i = 0; i < N; i++){
+            for(int j = 0; j < M; j++){
+                array1[i][j] = input.nextInt();
+            }
+        }
+        for (int i = 0; i < N; i++){
+            for(int j = 0; j < M; j++){
+                array2[i][j] = input.nextInt();
+            }
+        }
+
+        for (int i = 0; i < N; i++){
+            for (int j = 0; j < M; j++){
+                System.out.print(array1[i][j]+array2[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
