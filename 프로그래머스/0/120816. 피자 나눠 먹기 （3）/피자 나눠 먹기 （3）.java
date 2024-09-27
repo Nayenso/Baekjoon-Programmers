@@ -1,5 +1,12 @@
 class Solution {
     public int solution(int slice, int n) {
-return (n + slice - 1) / slice;
+        int i = 1;
+        while(true){
+            if(slice * i >= n){ 
+                break;
+            }
+            i++;
+        }
+        return i;
     }
 }
