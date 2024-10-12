@@ -1,13 +1,15 @@
 import java.util.Scanner;
-
+ 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int A, B;
-        A = scanner.nextInt();
-        B = scanner.nextInt();
-
-        System.out.println((A-B));
-    }
+ 
+	public static void main(String[] args) {
+ 
+		Scanner in = new Scanner(System.in);
+		int A = in.nextInt();
+		int B = in.nextInt();
+		
+		System.out.println(A-B);
+ 
+		in.close();
+	}
 }
